@@ -168,11 +168,12 @@ img {
   background: #2e2f42;
   /* padding: 188px 0; */
   padding: 77px 0;
+  height: 432px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-1-min.jpeg);
+    url(../images/mob/Dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -183,7 +184,7 @@ img {
 .section-head {
   margin: 0 auto;
   /* max-width: 496px; */
-  min-width: 288px;
+  max-width: 288px;
   /* margin-bottom: 48px; */
   margin-bottom: 72px;
   color: #fff;
@@ -688,14 +689,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  width: 288px;
+  /* min-height: 584px; */
+  min-height: 623px;
   background: var(--DAIRY, #fcfcfc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-button {
@@ -728,7 +732,7 @@ img {
 }
 
 .modal-text {
-  width: 360px;
+  /* width: 360px; */
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
   font-size: 16px;
@@ -922,6 +926,12 @@ img {
 
   .section {
     padding: 154px 0;
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tab/Dark-bg-tab.jpeg);
   }
 
   .section-head {
@@ -929,6 +939,12 @@ img {
     margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 /**-------------------------------------------*/
@@ -987,6 +1003,11 @@ img {
   .section {
     padding: 188px 0;
     height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-1-min.jpeg);
   }
 
   .section-head {
@@ -994,5 +1015,11 @@ img {
     margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
