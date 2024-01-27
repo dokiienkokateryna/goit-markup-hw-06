@@ -47,6 +47,8 @@ img {
 /**--------------------HEADER--------------------*/
 
 .header {
+  margin: 0 auto;
+  max-width: 320px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -168,10 +170,10 @@ img {
 /**--------------------SECTION--------------------*/
 
 .section {
+  max-width: 320px;
   background: #2e2f42;
   /* padding: 188px 0; */
   padding: 77px 0;
-  height: 436px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -180,7 +182,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -343,8 +344,7 @@ img {
 .section-three-menu {
   /* margin: 0;
   padding: 0; */
-  align-items: center;
-  padding-left: 12px;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -532,6 +532,7 @@ img {
   /* padding: 100px 0; */
   padding: 96px 0;
   height: 664px;
+  /* max-width: 320px; */
 }
 
 .footer-container {
@@ -545,8 +546,9 @@ img {
 }
 
 .footer-link {
-  padding-left: 80px;
-  display: inline-block;
+  /* padding-left: 80px; */
+  display: block;
+  text-align: center;
   margin-bottom: 16px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -596,7 +598,7 @@ img {
 
 .footer-social-menu {
   display: flex;
-  margin-left: 40px;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -629,7 +631,7 @@ img {
   text-align: center;
   /* margin-left: 80px; */
   /* width: 453px; */
-  height: 80px;
+  /* height: 80px; */
 }
 
 .subscribe-text {
@@ -673,7 +675,7 @@ img {
 }
 
 .subscribe-button {
-  margin-left: 60px;
+  margin: 0 auto;
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -700,7 +702,9 @@ img {
 /**-------------------MENU-MOBILE--------------------*/
 
 .menu-open-btn {
-  position: absolute;
+  max-width: 320px;
+  /* position: absolute; */
+  padding-left: 80px;
   top: 16px;
   right: 16px;
   bottom: 16px;
@@ -711,13 +715,18 @@ img {
   cursor: pointer;
 }
 
+.menu-open-btn-svg {
+  max-width: 320px;
+}
+
 .mob-menu {
+  max-width: 320px;
   position: fixed;
   top: 0;
+  left: 0;
   border-color: #fff;
   width: 100%;
-  height: 100vh;
-  max-height: 640px;
+  height: 100%;
   padding: 24px 24px 40px 16px;
   display: flex;
   flex-direction: column;
@@ -726,6 +735,8 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  background: #fff;
+  transform: translateY(0);
 }
 .mob-menu-close-btn {
   display: block;
@@ -799,7 +810,7 @@ img {
 .mob-menu-three-menu-menu {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
   margin-top: 8px;
 }
 .mob-menu-three-menu-menu-list {
@@ -1055,6 +1066,11 @@ img {
     display: none;
   }
 
+  .section {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
   .section-four-list {
     width: calc((100% - 24px) / 2);
   }
@@ -1114,6 +1130,11 @@ img {
     padding: 72px 24px 24px 24px;
   }
 
+  .header {
+    margin: 0 auto;
+    min-width: 768px;
+  }
+
   .container-header {
     width: 768px;
     height: 72px;
@@ -1141,6 +1162,8 @@ img {
   }
 
   .header-address-menu {
+    display: flex;
+    justify-content: right;
     flex-wrap: wrap;
     gap: 12px;
   }
@@ -1169,18 +1192,20 @@ img {
   }
   .footer-container {
     display: flex;
+    gap: 72px 24px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 108px;
   }
   .footer-div-logo {
-    margin-left: 108px;
+    margin-bottom: 0;
   }
   .footer-link {
     padding-left: 0;
   }
   .footer-container-social {
     text-align: left;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
   .footer-social-menu {
     display: flex;
@@ -1189,7 +1214,7 @@ img {
   }
   .container-subscribe {
     text-align: left;
-    margin-left: 108px;
+    /* margin-left: 108px; */
     height: 80px;
   }
   .subscribe-form {
@@ -1210,6 +1235,11 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
+    max-width: 1158px;
+  }
+
+  .section {
+    margin: 0 auto;
     max-width: 1158px;
   }
 
@@ -1292,6 +1322,11 @@ img {
     padding: 72px 24px 24px 24px;
   }
 
+  .header {
+    margin: 0 auto;
+    min-width: 1158px;
+  }
+
   .container-header {
     width: 100%;
     height: 72px;
@@ -1338,16 +1373,18 @@ img {
   }
   .footer-container {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: baseline;
+    padding-left: 0;
   }
   .footer-div-logo {
     margin-left: 0;
-    margin-right: 120px;
+    margin-right: 60px;
   }
 
   .footer-link {
-    padding-left: 0;
+    text-align: left;
   }
   .footer-paragraf {
     width: 264px;
@@ -1361,14 +1398,15 @@ img {
     margin-right: 0;
   }
   .container-subscribe {
-    margin-left: 80px;
+    margin-left: 60px;
     width: 453px;
   }
   .subscribe-form {
     display: flex;
+    gap: 24px;
   }
 
-  subscribe-email {
+  .subscribe-email {
     width: 264px;
     margin-bottom: 0;
   }
